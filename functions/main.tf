@@ -44,4 +44,6 @@ resource "aws_instance" "web-test" {
   }
 }
 
+
+
 # Other functions can be added.

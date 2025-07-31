@@ -17,3 +17,8 @@ output "iam_arn" {
     value = aws_iam_user.contractors[*].arn
   
 }
+
+output "match" {
+    value = zipmap(aws_iam_user.contractors[*].name, aws_iam_user.contractors[*].arn)
+  
+} 
